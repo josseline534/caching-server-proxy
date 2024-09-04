@@ -118,3 +118,7 @@ If you don't have a Redis server running, you can use Docker to run Redis locall
 [NPM](https://www.npmjs.com/package/caching-server-proxy 'npm')
 
 [WebSite](https://josseline534.github.io/professional-profile/ 'WebSite')
+
+Este repositorio sirve como solución al [Proxy de almacenamiento en caché](https://roadmap.sh/projects/caching-server 'Proxy de almacenamiento en caché')
+
+
