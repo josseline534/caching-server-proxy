@@ -1,5 +1,5 @@
 {
-  "name": "cachingproxy",
+  "name": "caching-server-proxy",
   "version": "1.0.0",
   "main": "server.js",
   "bin": "dist/cli.js",
@@ -11,11 +11,22 @@
     "exec": "npm run build && node dist/cli.js",
     "dev:exec": "ts-node src/cli.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "NodeJS",
+    "Redis",
+    "Typescript",
+    "Server",
+    "Proxy",
+    "yargs",
+    "express"
+  ],
   "author": {
     "email": "josselinesanchezb@gmail.com",
     "name": "Josseline Sánchez",
     "url": "https://josseline534.github.io/professional-profile/"
+  },
+  "repository": {
+    "url": "git@github.com:josseline534/master.git"
   },
   "license": "ISC",
   "description": "Servidor de almacenamiento en caché que almacene en caché las respuestas de otros servidores.",

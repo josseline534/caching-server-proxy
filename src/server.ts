@@ -3,7 +3,6 @@ import { cacheMiddleware } from './proxyMiddleware';
 import Cache from './redisCache';
 
 export const startServer = (port: number, origin: string) => {
-  console.log('origin: ', origin);
   const app = express();
 
   app.use(cacheMiddleware(origin));
@@ -14,6 +13,10 @@ export const startServer = (port: number, origin: string) => {
 };
 
 export const clearCache = async (key?: string) => {
+  console.group('CACHING PROXY START')
+  console.time()
   const cache = new Cache()
   await cache.clearCache(key)
+  console.timeEnd()
+  console.groupEnd()
 }
