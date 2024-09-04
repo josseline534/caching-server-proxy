@@ -1,0 +1,41 @@
+{
+  "name": "cachingproxy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "lint:fix": "npx eslint --fix 'src/**/*.{ts,tsx}'",
+    "lint": "npx eslint 'src/**/*.{ts,tsx}'",
+    "build": "npm run lint:fix && npx tsc",
+    "exec": "npm run build && node dist/cli.js",
+    "dev:exec": "ts-node src/cli.ts"
+  },
+  "keywords": [],
+  "author": {
+    "email": "josselinesanchezb@gmail.com",
+    "name": "Josseline Sánchez",
+    "url": "https://josseline534.github.io/professional-profile/"
+  },
+  "license": "ISC",
+  "description": "Servidor de almacenamiento en caché que almacene en caché las respuestas de otros servidores.",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.2",
+    "@types/yargs": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "redis": "^4.7.0",
+    "yargs": "^17.7.2"
+  }
+}

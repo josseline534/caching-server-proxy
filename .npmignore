@@ -1,0 +1,5 @@
+src
+.editorconfig
+docker-compose.yml
+eslint.config.mjs
+tsconfig.json
